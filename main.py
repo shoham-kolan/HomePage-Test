@@ -9,6 +9,12 @@ with col2:
     content = """This is My Data"""
     st.write(content)
 
+st.info("testing")
+
+col3, col4 = st.columns(2)
+
+with col3:
+    st.info("afdasfasfd")
 
 
 
