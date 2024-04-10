@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas
 
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
@@ -13,8 +14,16 @@ st.info("testing")
 
 col3, col4 = st.columns(2)
 
-with col3:
-    st.info("afdasfasfd")
+df = pandas.read_csv("data.csv", sep=",")
+
+for index, row in df.iterrows():
+    if (index%2 == 0 ) :
+        with col3:
+            st.header(row["Title"])
+    else:
+        with col4:
+            st.header(row["Title"])
+
 
 
 
