@@ -20,10 +20,15 @@ for index, row in df.iterrows():
     if (index%2 == 0 ) :
         with col3:
             st.header(row["Title"])
+            st.write(row["Description"])
+            st.image("images/" + row["Image"], width=400)
+            st.write(f"[Source Code]({row['URL']})")
     else:
         with col4:
             st.header(row["Title"])
-
+            st.write(row["Description"])
+            st.image("images/" + row["Image"],width=400)
+            st.write(f"[Source Code]({row['URL']})")
 
 
 
