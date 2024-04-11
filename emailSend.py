@@ -3,9 +3,9 @@ import ssl
 
 host="smtp.gmail.com"
 port=465
-password = "niym jhbu vvqu vhoj"
-userName = "shoham.kolan@gmail.com"
-rec = "shoham.kolan@gmail.com"
+password = ""
+userName = ""
+rec = ""
 msg = """\
 Subject:How are you
 I am fine
